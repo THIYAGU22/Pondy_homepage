@@ -1,0 +1,28 @@
+.historyStyles{
+
+   display: -webkit-flex; /* Safari */
+   -webkit-align-items: center; /* Safari 7.0+ */
+   display: flex;
+   align-items: center;
+}
+
+p{
+  font-family: helvetica;
+  font-size: 17px;
+}
+
+table{
+  font-family: arial,sans-serif;
+  border-collapse: collapse;
+  width:100%;
+}
+
+td,th{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8dp;
+}
+/* tr-- row n rows in which even cell is to be set with follg properties */
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

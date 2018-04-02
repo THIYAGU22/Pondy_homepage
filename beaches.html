@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BEACHES</title>
+</head>
+
+<body>
+
+  <link rel="stylesheet" type="text/css" href="beachesStyles.css">
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+
+      <div class="numbertext">1 / 3</div>
+      <img src="pondybeach.jpg" style="width:100%">
+      <div class="text">PONDICHERRY Beach</div>
+      <p>Pondicherry Beach is a paradise for all beach lovers and tourists. It is flanked by a flowing creek on one side and is also known for its tree houses, which are located on the backwaters. The beach is a budget one in South India as it is cheaper to access and accommodation in Pondicherry is lesser when compared to other beaches and their resorts or hotels in the country.
+      </p>
+    </div>
+
+    <div class="mySlides fade">
+
+      <div class="numbertext">2 / 3</div>
+      <img src="veerampattinambeach.jpg" style="width:100%">
+      <div class="text">VEERAMPATINAM BEACH</div>
+
+      <p>Veerampattinam is the biggest coastal village in the Union Territory of Puducherry and is located between Pondicherry and Cuddalore. The village is 7kms from the city centre and frequent bus services are available from Pondicherry.
+</p>
+    </div>
+
+    <div class="mySlides fade">
+
+      <div class="numbertext">3 / 3</div>
+      <img src="serenitybeach.jpg" style="width:100%">
+      <div class="text">SERENITY BEACH</div>
+      <p> This beach is a twenty minutes drive to the north of the town. Fishing boats are parked on the shore and one can see kids do summersaults off the deck. A lot of the beach is covered with creepers and the green helps cool the place.
+      </p>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="promenade-beach-pondicherry-head-570.jpeg" style="width:100%">
+      <div class="text">Promenade Beach
+</div>
+  <p>The 1.5 km long promenade running along the beach is the pride of Puducherry. One can relax or take a stroll at any time of the day, though the best time would be early in the mornings and late evenings when the road is closed to vehicular traffic. 
+</p>
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="PARADISE.jpg" style="width:100%">
+      <div class="text">Paradise Beach
+</div>
+<p>This pristine private beach is meticulously taken care of and offers a host of benefits - from food and beverages to showers and restrooms, all just a few meters away. Swimming is permitted close to the shore only, as currents can be strong further in. Bring a change of clothes if you plan to take a dip.
+</p>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="AUROVILLEBEACH.jpg" style="width:100%">
+      <div class="text">Auroville Beach
+</div>
+<p>Popularly referred to as Auro beach - as the name suggests is close to Auroville. It is situated at the right side of the ECR, opposite to the road leading to Auroville. Located about 12 kms from the main Puducherry town, its shallow waters and small waves make it an ideal place for swimming. It is a fairly popular destination and on weekends it can get rather crowded, whereas on weekdays it is relatively less so.
+</p>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <div class="w3-bar w3-border w3-round">
+  <a class="prev" onclick="plusSlides(-1)">&#10094; Previous</a>
+  <a class="next" onclick="plusSlides(1)">Next &#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length)
+    {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5500);
+}
+</script>
+
+
+  </body>
+  </html>
